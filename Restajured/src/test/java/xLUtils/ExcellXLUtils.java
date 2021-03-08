@@ -29,7 +29,7 @@ public class ExcellXLUtils {
 		getCellData();
 	}*/
 
-	public static void getCellData(int rownum, int colcount) throws IOException {
+	public static int getCellData(int rownum, int colcount) throws IOException {
 		try {
 			// String projDir=System.getProperty("user.dir");
 			// System.out.println(projDir);
@@ -48,10 +48,11 @@ public class ExcellXLUtils {
 			exe.printStackTrace();
 
 		}
+		return colcount;
 
 	}
 
-	public static void getRowCount() {
+	public static int getRowCount(String path, String string) {
 		try {
 			// String projDir=System.getProperty("user.dir");
 			// System.out.println(projDir);
@@ -69,6 +70,7 @@ public class ExcellXLUtils {
 			exe.printStackTrace();
 
 		}
+		return 0;
 
 	}
 }

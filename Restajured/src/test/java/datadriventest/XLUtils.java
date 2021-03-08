@@ -1,5 +1,7 @@
 package datadriventest;
 
+import java.io.IOException;
+
 import org.json.simple.JSONObject;
 import org.testng.AssertJUnit;
 import org.testng.annotations.DataProvider;
@@ -44,43 +46,23 @@ public class XLUtils {
 		}
 		
 		@DataProvider(name="empdataprovider")
-		public String [][] Getdata()
+		public String [][] Getdata() throws IOException
 		{
+			//read data from excell
 			String Path=System.getProperty("user.dir")+"/src/test/java/datadriventest/Empdetails.xlsx";
-			int rownum = XLUtils.getRowCount(Path, "Sheet1");
-		    int colcount=XLUtils.getCellCount(Path, "Sheet1",1 );
-		    
-			
+			int rownum = ExlXLUtils.getRowCount(Path, "Sheet1");
+		    int colcount=ExlXLUtils.getCellcount(Path, "Sheet1",1 );
+		    		
 			//String data[][]= {{"abcd05","50000","33"},{"XYZS15","40000","39"},{"ABCD16","90000","30"}};
-			String empdata[][]=new String[rownum][colcount];
+			String Empdetails[][]=new String[rownum][colcount];
 			for(int i=1;i<=rownum;i++)
 			{
 				for(int j=0;j<colcount;j++)
 				{
-					empdata[i-1][j]=XLUtils.getCellData(Path,"Sheet1",i,j);
+					Empdetails[i-1][j]=ExlXLUtils.getCellData(Path,"Sheet1",i,j);
 				}
 			}
 		    	    
-		    return empdata;
-		}
-
-		public static int getCellCount(String path, String string, int i) {
-			// TODO Auto-generated method stub
-			return 0;
-		}
-
-		public static int getRowCount(String path, String string) {
-			// TODO Auto-generated method stub
-			return 0;
-		}
-
-		public static String getCellData(String path, String string, int i, int j) {
-			// TODO Auto-generated method stub
-			return null;
-		}
-	
-
-	
-
-	
+		    return (Empdetails);
+		}	
 }

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Mar 07 12:14:29 IST 2021</td>
+<td>Started on:</td><td>Mon Mar 08 14:21:56 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>4 seconds (4410 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (921 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,44 +67,21 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='soapui.XMLScemavalidator.xmlScemavalidator()'><b>xmlScemavalidator</b><br>Test class: soapui.XMLScemavalidator</td>
-<td><div><pre>groovy.lang.GroovyRuntimeException: Ambiguous method overloading for method io.restassured.internal.matcher.xml.XmlXsdMatcher#matchesXsd.
-Cannot resolve which method to invoke for [null] due to overlapping prototypes between:
-	[class java.io.File]
-	[class java.io.InputStream]
-	[class java.io.Reader]
-	[class java.lang.String]
-	[class java.net.URL]
-	at groovy.lang.MetaClassImpl.doChooseMostSpecificParams(MetaClassImpl.java:3279)
-	at groovy.lang.MetaClassImpl.chooseMostSpecificParams(MetaClassImpl.java:3256)
-	at groovy.lang.MetaClassImpl.chooseMethodInternal(MetaClassImpl.java:3245)
-	at groovy.lang.MetaClassImpl.chooseMethod(MetaClassImpl.java:3188)
-	at groovy.lang.MetaClassImpl.pickStaticMethod(MetaClassImpl.java:1535)
-	at groovy.lang.MetaClassImpl.retrieveStaticMethod(MetaClassImpl.java:1431)
-	at groovy.lang.MetaClassImpl.createStaticSite(MetaClassImpl.java:3447)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.createCallStaticSite(CallSiteArray.java:76)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:55)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:196)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:208)
-	at io.restassured.internal.matcher.xml.XmlXsdMatcher.matchesXsdInClasspath(XmlXsdMatcher.groovy:95)
-	at io.restassured.matcher.RestAssuredMatchers.matchesXsdInClasspath(RestAssuredMatchers.java:83)
-	at soapui.XMLScemavalidator.xmlScemavalidator(XMLScemavalidator.java:37)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+<td title='datadriventest.XLUtils.CreateEmploydetails()'><b>CreateEmploydetails</b><br>Test class: datadriventest.XLUtils</td>
+<td><div><pre>java.lang.RuntimeException: java.lang.NullPointerException
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:162)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:430)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1270)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:985)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1075)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
 	at org.testng.TestRunner.privateRun(TestRunner.java:774)
@@ -121,36 +98,23 @@ Cannot resolve which method to invoke for [null] due to overlapping prototypes b
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
-</pre></div><a href='#' onClick='toggleBox("stack-trace23916888", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace23916888'><pre>groovy.lang.GroovyRuntimeException: Ambiguous method overloading for method io.restassured.internal.matcher.xml.XmlXsdMatcher#matchesXsd.
-Cannot resolve which method to invoke for [null] due to overlapping prototypes between:
-	[class java.io.File]
-	[class java.io.InputStream]
-	[class java.io.Reader]
-	[class java.lang.String]
-	[class java.net.URL]
-	at groovy.lang.MetaClassImpl.doChooseMostSpecificParams(MetaClassImpl.java:3279)
-	at groovy.lang.MetaClassImpl.chooseMostSpecificParams(MetaClassImpl.java:3256)
-	at groovy.lang.MetaClassImpl.chooseMethodInternal(MetaClassImpl.java:3245)
-	at groovy.lang.MetaClassImpl.chooseMethod(MetaClassImpl.java:3188)
-	at groovy.lang.MetaClassImpl.pickStaticMethod(MetaClassImpl.java:1535)
-	at groovy.lang.MetaClassImpl.retrieveStaticMethod(MetaClassImpl.java:1431)
-	at groovy.lang.MetaClassImpl.createStaticSite(MetaClassImpl.java:3447)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.createCallStaticSite(CallSiteArray.java:76)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:55)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:196)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:208)
-	at io.restassured.internal.matcher.xml.XmlXsdMatcher.matchesXsdInClasspath(XmlXsdMatcher.groovy:95)
-	at io.restassured.matcher.RestAssuredMatchers.matchesXsdInClasspath(RestAssuredMatchers.java:83)
-	at soapui.XMLScemavalidator.xmlScemavalidator(XMLScemavalidator.java:37)
+Caused by: java.lang.NullPointerException
+	at datadriventest.ExlXLUtils.getRowCount(ExlXLUtils.java:30)
+	at datadriventest.XLUtils.Getdata(XLUtils.java:53)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:136)
+	... 20 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace32577208", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace32577208'><pre>java.lang.RuntimeException: java.lang.NullPointerException
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:162)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:430)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1270)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:985)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1075)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
 	at org.testng.TestRunner.privateRun(TestRunner.java:774)
@@ -167,9 +131,19 @@ Cannot resolve which method to invoke for [null] due to overlapping prototypes b
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+Caused by: java.lang.NullPointerException
+	at datadriventest.ExlXLUtils.getRowCount(ExlXLUtils.java:30)
+	at datadriventest.XLUtils.Getdata(XLUtils.java:53)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:136)
+	... 20 more
 </pre></div></td>
-<td>4</td>
-<td>soapui.XMLScemavalidator@af6cff</td></tr>
+<td>0</td>
+<td>datadriventest.XLUtils@a097cc</td></tr>
 </table><p>
 </body>
 </html>

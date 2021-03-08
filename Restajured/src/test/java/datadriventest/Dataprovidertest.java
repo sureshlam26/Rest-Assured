@@ -49,7 +49,7 @@ public class Dataprovidertest {
 	{
 		
 		
-		String data[][]= {{"abcd05","50000","33"},{"XYZS15","40000","39"},{"ABCD16","90000","30"}};
+		String data[][]= {{"abcd06","50000","33"},{"XYZS5","40000","39"},{"ABCD6","90000","30"}};
 		return data;
 	}
 	
